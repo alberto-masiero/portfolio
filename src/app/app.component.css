@@ -1,0 +1,23 @@
+.picture {
+    text-align: center;
+    margin-top: 20vh;
+    width: 1000px;
+    margin-left: 20vw;
+}
+
+.mat-tab-group {
+    flex-direction: initial;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.test {
+    color: red;
+}
+
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    color:darkblue;
+   
+    }

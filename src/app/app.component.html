@@ -1,0 +1,56 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="container picture">
+  <img class="rounded" [src]="userInfo?.picture?.large" >
+  <h2>{{intestazione}}</h2>
+  <h1>{{date ? (description | date: 'shortDate'): description}}</h1>
+
+  <mat-tab-group (selectedTabChange)="changeText($event)">
+    <mat-tab>
+      <ng-template mat-tab-label >
+        <mat-icon class="example-tab-icon">info</mat-icon>
+        
+      </ng-template>
+      
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">mail_outline</mat-icon>
+     
+      </ng-template>
+  
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">calendar_today</mat-icon>
+        
+      </ng-template>
+  
+    
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">map</mat-icon>
+        
+      </ng-template>
+    
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">phone</mat-icon>
+      </ng-template>
+     
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">lock</mat-icon>
+        
+      </ng-template>
+  
+    </mat-tab>
+  </mat-tab-group>
+</div>
